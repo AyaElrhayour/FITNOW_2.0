@@ -1,29 +1,24 @@
 import React from 'react';
 
+
+
 const HeroSection = () => {
   return (
-    <div className=" bg-gray-900  flex-wrap ">
-      <div className="container mx-auto px-4 py-20 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          WORK WITH PROFESSIONALS
-        </h1>
-        <p className="text-gray-400 mb-8">
-          Lorem ipsum dolor sit amet consectetur. Neque dolor in semper aliquet lacisis tristique placerat sit.
-        </p>
-        <div className="flex justify-center space-x-4">
-          <button className="bg-[#cdec69] hover:bg-[#bde25e] text-gray-900 font-semibold py-2 px-8 rounded-full">
-            START NOW
-          </button>
-          <button className="bg-gray-700/50 hover:bg-gray-600 text-white font-semibold py-2 px-8 rounded-full">
-            LEARN MORE
-          </button>
+    <div>
+      <section className="hero-section bg-black text-white py-24 px-4 md:px-8 bg-cover bg-center" style={{backgroundImage: 'url(/src/assets/img3.jpg)'}}>
+        <div className="hero-container max-w-5xl mx-auto flex flex-col items-center ">
+          <div className="hero-content flex flex-col items-center gap-y-16 max-w-2xl">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4">Welcome back</h1>
+       
+            <button className="bg-[#cef15c] shadow-md shadow-[#d1f263] text-stone-700 font-bold py-3 px-8 rounded-full transition-colors duration-300" style={{ boxShadow: '0px 0px 10px 0px #d1f263' }}>
+              Add Your Progress
+            </button>
+          </div>
+          {/* <div className="hero-image w-64 md:w-80 mt-8 md:mt-0">
+            <img src="/src/assets/img2.jpeg" alt="Hero" className="w-full h-auto rounded-md" />
+          </div> */}
         </div>
-      </div>
-        <div className="bg-[#cdec69] text-gray-900  py-4 ">
-          <p className='text-3xl w-full font-bold text-nowrap'>
-            CONVENIENT  LOCATION  &  SCHEDULE  DRAWING  UP  AN  INDIVIDUAL  TRAINING  PROGRAM  BEST  PROFESSIONAL
-          </p>
-        </div>
+      </section>
     </div>
   );
 };
